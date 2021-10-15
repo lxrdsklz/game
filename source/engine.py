@@ -1,4 +1,4 @@
-def game(low_edge, high_edge, hidden_number):
+def game(low_edge, high_edge, hidden_number, uname):
     game = True
     counts = 0
     while game:
@@ -16,4 +16,5 @@ def game(low_edge, high_edge, hidden_number):
                 print('Вы угадали. Загаданное число было %s' % hidden_number)
                 game = False
         counts += 1
-        print('Количество попыток: %s' % counts)
+    #print('Количество попыток:', counts)
+    return counts
