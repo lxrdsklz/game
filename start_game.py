@@ -1,9 +1,6 @@
 from source import game_start
 import sqlite3
 
-#TODO
-#группировка по проебанным попыткам
-
 if __name__ == '__main__':
     conn = sqlite3.connect('db.db')
     cursor = conn.cursor()
